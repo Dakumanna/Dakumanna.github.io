@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Slideshow</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="slider">   
+  <div class="slides">
+
+    <input type="radio" name="radio-btn" id="radio1">
+    <input type="radio" name="radio-btn" id="radio2">
+    <input type="radio" name="radio-btn" id="radio3">
+    <input type="radio" name="radio-btn" id="radio4">
+    <input type="radio" name="radio-btn" id="radio5">
+    <input type="radio" name="radio-btn" id="radio6">
+
+  
+
+    <div class="slide first">
+  <img src="https://sportshub.cbsistatic.com/i/2022/08/21/57739c14-7a2d-4c0d-b3b7-1f0be127f1a1/jujutsu-kaisen-death-painting-arc-anime-poster.jpg">  
+  </div>
+  
+  <div class="slide">
+  <img src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/04/Demon-Slayer-characters.jpg"> 
+  </div>
+    
+  <div class="slide">
+  <img src="https://upload.wikimedia.org/wikipedia/en/4/43/DororoBluraycollection.png"> 
+  </div>
+    
+  <div class="slide">
+  <img src="https://www.cnet.com/a/img/resize/ab9fc7f5f1a1e52e08cd315879b9f112e7a13d0c/hub/2022/05/25/36e6a368-1b94-44b1-9fb8-5aaa7977bf05/hunterxhunter.jpg?auto=webp&fit=crop&height=675&width=1200">
+  </div>
+    
+  <div class="slide">
+  <img src="https://m.media-amazon.com/images/M/MV5BMjIyMjFjNDUtMzg1OC00ZThiLWExYjctNGYzN2ZhYWUxOWZlXkEyXkFqcGdeQXVyMTAzMDM4MjM0._V1_QL75_UY281_CR3,0,190,281_.jpg">
+   </div>
+    
+  <div class="slide">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3hwdF9DRyrldBdMej2MTcBRdldyCeUXn6uw&usqp=CAU">
+</div>
+
+    <div class="nav-auto">
+      <div class="auto-btn1"></div>
+      <div class="auto-btn2"></div>
+      <div class="auto-btn3"></div>
+      <div class="auto-btn4"></div>
+      <div class="auto-btn5"></div>
+      <div class="auto-btn6"></div>
+    </div>
+    
+    </div>
+    <div class="nav-manual"> 
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+      <label for="radio4" class="manual-btn"></label>
+      <label for="radio5" class="manual-btn"></label>
+      <label for="radio6" class="manual-btn"></label>
+  </div>
+
+  </div>
+  
+  <script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if(counter >6){
+        counter = 1;
+      }
+    }, 7000);
+  </script>
+
+ <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+</body>
+
+</html>
